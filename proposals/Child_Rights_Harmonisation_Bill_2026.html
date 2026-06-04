@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Rights Harmonisation Bill 2026 — Sri Lanka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --ink-mid: #3d3d5c;
+    --ink-light: #6b6b8a;
+    --paper: #faf9f6;
+    --paper-alt: #f3f1ec;
+    --rule: #d4cfc4;
+    --accent: #8b1a1a;
+    --accent-light: #c9423a;
+    --accent-pale: #f9eeee;
+    --navy: #1a3a5c;
+    --navy-mid: #2e5c8a;
+    --navy-pale: #e8f0f8;
+    --gold: #8a6900;
+    --gold-pale: #fdf5e0;
+    --green: #2d5a3d;
+    --green-pale: #eaf3ee;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .masthead {
+    background: var(--ink);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem 2.5rem;
+    border-bottom: 4px solid var(--accent);
+  }
+
+  .masthead .jurisdiction {
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.2rem;
+  }
+
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 0.6rem;
+  }
+
+  .masthead .subtitle {
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(255,255,255,0.65);
+    max-width: 640px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .masthead .meta-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-pill {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 4px 14px;
+    border-radius: 2px;
+  }
+
+  .page-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  .toc-block {
+    background: var(--paper-alt);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--navy);
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .toc-block h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 1rem;
+  }
+
+  .toc-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 3rem;
+  }
+
+  @media (max-width: 600px) { .toc-list { grid-template-columns: 1fr; } }
+
+  .toc-list li a {
+    font-size: 15px;
+    color: var(--navy-mid);
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+
+  .toc-list li a:hover { color: var(--accent); }
+
+  .toc-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-light);
+    min-width: 28px;
+  }
+
+  section { margin-top: 3.5rem; }
+
+  .part-header {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .part-label {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 0.4rem;
+  }
+
+  .part-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--navy);
+    margin: 2rem 0 0.8rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h4 {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Source Serif 4', serif;
+    color: var(--ink-mid);
+    margin: 1.5rem 0 0.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  p { margin-bottom: 1rem; color: var(--ink-mid); }
+
+  ul.clauses {
+    list-style: none;
+    margin: 0.8rem 0 1.2rem 0;
+  }
+
+  ul.clauses li {
+    padding: 6px 0 6px 1.8rem;
+    position: relative;
+    font-size: 16px;
+    color: var(--ink-mid);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  ul.clauses li:last-child { border-bottom: none; }
+
+  ul.clauses li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--ink-light);
+    font-weight: 300;
+  }
+
+  .callout {
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 3px solid;
+    border-radius: 0;
+  }
+
+  .callout-note { background: var(--navy-pale); border-color: var(--navy-mid); }
+  .callout-warn { background: var(--gold-pale); border-color: var(--gold); }
+  .callout-critical { background: var(--accent-pale); border-color: var(--accent); }
+  .callout-good { background: var(--green-pale); border-color: var(--green); }
+
+  .callout-label {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .callout-note .callout-label { color: var(--navy); }
+  .callout-warn .callout-label { color: var(--gold); }
+  .callout-critical .callout-label { color: var(--accent); }
+  .callout-good .callout-label { color: var(--green); }
+
+  .callout p { font-size: 15px; margin-bottom: 0; }
+  .callout-note p { color: var(--navy); }
+  .callout-warn p { color: #5a4500; }
+  .callout-critical p { color: #7a1515; }
+  .callout-good p { color: var(--green); }
+
+  .statute-block {
+    background: var(--paper-alt);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--navy-mid);
+    padding: 1.4rem 1.8rem;
+    margin: 1.5rem 0;
+  }
+
+  .statute-block .statute-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--navy-mid);
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .statute-block ol {
+    list-style: none;
+    counter-reset: clause;
+    margin: 0;
+  }
+
+  .statute-block ol li {
+    counter-increment: clause;
+    padding: 6px 0 6px 2.2rem;
+    position: relative;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.65;
+    color: var(--ink);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .statute-block ol li:last-child { border-bottom: none; }
+
+  .statute-block ol li::before {
+    content: "(" counter(clause) ")";
+    position: absolute;
+    left: 0;
+    color: var(--navy-mid);
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 1.2rem 0;
+  }
+
+  .data-table th {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+  }
+
+  .data-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink-mid);
+    vertical-align: top;
+    line-height: 1.55;
+  }
+
+  .data-table tr:nth-child(even) td { background: var(--paper-alt); }
+  .data-table tr:hover td { background: var(--navy-pale); }
+
+  .status-ok { color: var(--green); font-weight: 600; }
+  .status-bad { color: var(--accent-light); font-weight: 600; }
+  .status-gap { color: var(--gold); font-weight: 600; }
+
+  .phase-grid {
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 1.2rem 0;
+  }
+
+  .phase-row {
+    display: grid;
+    grid-template-columns: 160px 120px 1fr;
+    background: var(--paper);
+    gap: 0;
+  }
+
+  .phase-row.header {
+    background: var(--navy);
+  }
+
+  .phase-row.header span {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    padding: 10px 14px;
+  }
+
+  .phase-cell {
+    padding: 12px 14px;
+    font-size: 14px;
+    color: var(--ink-mid);
+    border-right: 1px solid var(--rule);
+  }
+
+  .phase-cell:last-child { border-right: none; }
+  .phase-cell.phase-name { font-weight: 600; color: var(--navy); font-size: 13px; }
+  .phase-cell.phase-time { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--ink-light); }
+
+  .phase-row:nth-child(even) { background: var(--paper-alt); }
+
+  .exec-summary {
+    background: var(--ink);
+    color: #fff;
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .exec-summary::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 200px;
+    font-family: 'Playfair Display', serif;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .exec-summary h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 1rem;
+  }
+
+  .exec-summary p {
+    color: rgba(255,255,255,0.85);
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+  }
+
+  .exec-summary p:last-child { margin-bottom: 0; }
+
+  .key-principle {
+    background: rgba(255,255,255,0.08);
+    border-left: 3px solid rgba(255,255,255,0.3);
+    padding: 1rem 1.4rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .colophon {
+    border-top: 2px solid var(--rule);
+    padding-top: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .colophon p {
+    font-size: 13px;
+    color: var(--ink-light);
+    font-style: italic;
+    margin-bottom: 0.4rem;
+  }
+
+  @media print {
+    .masthead { background: #fff; color: var(--ink); border-bottom: 2px solid var(--ink); }
+    .masthead h1, .masthead .jurisdiction, .masthead .subtitle { color: var(--ink); }
+    .exec-summary { background: var(--paper-alt); }
+    .exec-summary p, .exec-summary h2, .key-principle { color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <h1>Child Rights Harmonisation Bill 2026</h1>
+  <p class="subtitle">A Bill to establish universal child protections consistent with the UN Convention on the Rights of the Child and international human rights standards</p>
+  <div class="meta-row">
+    <span class="meta-pill">Citizen Proposal</span>
+    <span class="meta-pill">Draft</span>
+    <span class="meta-pill">June 2026</span>
+    <span class="meta-pill">CRC · CEDAW · ICCPR</span>
+  </div>
+</div>
+
+<div class="page-wrap">
+
+  <div class="callout callout-warn" style="margin-top: 2rem;">
+    <p class="callout-label">Disclaimer — Early Draft</p>
+    <p>This document is an early-stage citizen proposal and has not been reviewed, endorsed, or adopted by any legislative, governmental, or legal body. It is shared for the purpose of public discourse and further development only.</p>
+    <p style="margin-top: 0.6rem;">Readers are advised to independently cross-check and verify all statistics, figures, and citations referenced herein — including estimated numbers of child marriages, children in monasteries, and comparative data from other jurisdictions — before relying on them for advocacy, academic, or policy purposes. Some data points are drawn from secondary sources and may have changed since publication.</p>
+    <p style="margin-top: 0.6rem;">The proposed legislative clauses have not been reviewed by a qualified Sri Lankan legal practitioner. They are illustrative in nature and would require formal legal drafting, constitutional review, and stakeholder consultation before being suitable for parliamentary submission. Nothing in this document constitutes legal advice.</p>
+    <p style="margin-top: 0.6rem;"><strong>This proposal is a work in progress.</strong> Content, structure, and legislative provisions are subject to change as research, consultation, and review continue. Feedback and contributions are welcome.</p>
+  </div>
+
+  <nav class="toc-block" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ul class="toc-list">
+      <li><a href="#exec"><span class="toc-num">—</span>Executive Summary</a></li>
+      <li><a href="#part1"><span class="toc-num">I</span>Existing Legal Gaps &amp; Obligations</a></li>
+      <li><a href="#part2"><span class="toc-num">II</span>Reform of the MMDA</a></li>
+      <li><a href="#part3"><span class="toc-num">III</span>Children in Buddhist Monasteries</a></li>
+      <li><a href="#part4"><span class="toc-num">IV</span>Overarching Provisions</a></li>
+      <li><a href="#part5"><span class="toc-num">V</span>Implementation Roadmap</a></li>
+      <li><a href="#conclusion"><span class="toc-num">—</span>Conclusion</a></li>
+    </ul>
+  </nav>
+
+  <!-- Executive Summary -->
+  <section id="exec">
+    <div class="exec-summary">
+      <h2>Executive Summary</h2>
+      <p>Sri Lanka has made meaningful progress in child rights through the amendment of the Children and Young Persons Ordinance (effective January 1, 2024), which established 18 as the uniform legal age of childhood. However, two systemic gaps remain unresolved and have been repeatedly identified by UN treaty bodies as inconsistent with Sri Lanka's obligations under the UN Convention on the Rights of the Child (CRC), ratified in 1991:</p>
+      <p>First, the Muslim Marriage and Divorce Act (MMDA) No. 13 of 1951, which sets no minimum age of marriage, permitting child marriage for the Muslim community through Quazi authorisation — including for girls under 12.</p>
+      <p>Second, the complete absence of any legislative framework governing the ordination of children into Buddhist monasteries, despite repeated media reports, NCPA investigations, and academic research raising child welfare concerns in that context.</p>
+      <p>This Bill proposes targeted, constitutionally sound reforms to close both gaps. It is grounded in the principle that no religious personal law — however historically significant — can lawfully override the constitutional guarantee of equal protection or Sri Lanka's binding international treaty obligations.</p>
+      <div class="key-principle">
+        Child rights are not contingent on religious community. A child is a child under Sri Lankan law, regardless of whether they are Muslim, Buddhist, or of any other faith.
+      </div>
+    </div>
+  </section>
+
+  <!-- Part I -->
+  <section id="part1">
+    <div class="part-header">
+      <p class="part-label">Part I</p>
+      <h2>Existing Legal Gaps and International Obligations</h2>
+    </div>
+
+    <h3>1.1 Current Legal Landscape</h3>
+    <p>The following statutes constitute the operative legal framework relevant to this Bill:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Statute</th>
+          <th>Scope</th>
+          <th>Gap / Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>General Marriage Registration Ordinance (amended 1995)</td>
+          <td>All non-Muslim, non-Kandyan marriages</td>
+          <td><span class="status-ok">Compliant — min. age 18</span></td>
+        </tr>
+        <tr>
+          <td>Kandyan Marriage and Divorce Act (amended 1995)</td>
+          <td>Kandyan Sinhalese</td>
+          <td><span class="status-ok">Compliant — min. age 18</span></td>
+        </tr>
+        <tr>
+          <td>Muslim Marriage and Divorce Act No. 13 of 1951</td>
+          <td>Muslim marriages</td>
+          <td><span class="status-bad">Non-compliant — no minimum age; Quazi may approve under-12 marriage</span></td>
+        </tr>
+        <tr>
+          <td>Children's Ordinance (amended 2024)</td>
+          <td>All children in justice system</td>
+          <td><span class="status-ok">Compliant — defines child as under 18</span></td>
+        </tr>
+        <tr>
+          <td>Penal Code s.363</td>
+          <td>All persons</td>
+          <td><span class="status-bad">Internal contradiction — statutory rape below 16, but MMDA permits marriage below that age</span></td>
+        </tr>
+        <tr>
+          <td>Buddhist Temporalities Ordinance (1931)</td>
+          <td>Buddhist temple property/management</td>
+          <td><span class="status-gap">Gap — entirely silent on child ordination</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>1.2 Sri Lanka's International Treaty Obligations</h3>
+    <p>Sri Lanka has ratified or acceded to the following instruments, all of which require the reforms proposed in this Bill:</p>
+    <ul class="clauses">
+      <li>UN Convention on the Rights of the Child (CRC) — ratified 1991. Article 1 defines a child as under 18; Articles 2, 3, 19, 24, 28 and 34 are directly engaged.</li>
+      <li>Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW) — ratified 1981. The CEDAW Committee has repeatedly called for Sri Lanka to set 18 as the uniform minimum marriage age.</li>
+      <li>International Covenant on Civil and Political Rights (ICCPR) — ratified 1980. Article 24 guarantees every child the right to protective measures without discrimination.</li>
+      <li>SAARC Kathmandu Call to Action to End Child Marriage (2014) — Sri Lanka committed to a uniform minimum legal age of marriage of 18.</li>
+    </ul>
+
+  </section>
+
+  <!-- Part II -->
+  <section id="part2">
+    <div class="part-header">
+      <p class="part-label">Part II</p>
+      <h2>Reform of the Muslim Marriage and Divorce Act</h2>
+    </div>
+
+    <h3>2.1 The Problem in Detail</h3>
+    <p>The MMDA is the single largest legislative driver of child marriage in Sri Lanka. Specifically:</p>
+    <ul class="clauses">
+      <li>Section 23 prohibits registration of marriages of girls under 12 without a Quazi's permission — implying that with permission, such marriages are legally valid.</li>
+      <li>There is no floor below which a Quazi cannot grant permission. Marriage age is therefore unbounded downward in practice.</li>
+      <li>A girl married under the MMDA cannot sign her own marriage contract. A male guardian (wali) signs on her behalf.</li>
+      <li>The Quazi court system has no women members, no standardised qualifications, and no accessible appeals mechanism for minors.</li>
+    </ul>
+
+    <div class="callout callout-critical">
+      <p class="callout-label">Internal Legal Contradiction</p>
+      <p>Section 363 of the Penal Code criminalises sexual intercourse with a girl below 16, yet the MMDA permits — and gives legal effect to — marriages that presuppose exactly such conduct. This contradiction has never been formally resolved.</p>
+    </div>
+
+    <div class="callout callout-good">
+      <p class="callout-label">Comparative Reform — Malaysia &amp; Indonesia</p>
+      <p>Malaysia has undertaken significant reforms to reduce child marriage and raise minimum marriage ages, though exceptions continue to exist in some jurisdictions under state-level Islamic family law. Indonesia raised the national minimum marriage age to 19 in 2019, though judicial dispensations remain available in practice. Neither country represents a perfect "18 without exceptions" model — but both demonstrate that meaningful reform of Islamic personal law is achievable within Muslim-majority contexts, and that progress need not require the abolition of religious family law frameworks.</p>
+    </div>
+
+    <h3>2.2 Proposed Amendments to the MMDA</h3>
+
+    <h4>Section A — Minimum Age of Marriage</h4>
+    <p>Clause 1: Repeal Section 23 of the MMDA in its entirety.</p>
+    <p>Clause 2: Insert new Section 4A as follows:</p>
+
+    <div class="statute-block">
+      <p class="statute-title">Proposed Section 4A — Minimum Age of Marriage</p>
+      <ol>
+        <li>No marriage shall be solemnised, registered, or recognised as valid under this Act unless both parties have attained the age of eighteen (18) years.</li>
+        <li>No Quazi, Marriage Registrar, or other official acting under this Act shall solemnise or register a marriage in which either party has not attained the age of eighteen (18) years.</li>
+        <li>No exception to the minimum age under this section may be granted by any official, religious authority, or court. The minimum age is absolute and without exception.</li>
+        <li>Any purported marriage in contravention of this section shall be void ab initio and of no legal effect.</li>
+      </ol>
+    </div>
+
+    <div class="callout callout-critical">
+      <p class="callout-label">Why No Exceptions?</p>
+      <p>Previous proposals have floated exceptions at 14 or 16, which Muslim women activists and the MPLRAG explicitly reject. The 2020 Advisory Committee to the Ministry of Justice — including Islamic scholars — reached broad consensus on 18 without exceptions. Any exception creates a loophole that will be exploited, particularly for girls from low-income families.</p>
+    </div>
+
+    <h4>Section B — Right of a Woman to Sign Her Own Marriage Contract</h4>
+    <p>Clause 3: Amend Section 17 to require the bride's own signature on the marriage contract as mandatory. The wali's signature shall be optional and at the sole discretion of the bride.</p>
+
+    <h4>Section C — Women Quazis and Reform of the Quazi Court System</h4>
+    <p>Clause 4: Amend Sections 8–16 to:</p>
+    <ul class="clauses">
+      <li>Remove the requirement that Quazis be male. Any qualified Muslim lawyer of good standing shall be eligible for appointment regardless of gender.</li>
+      <li>Require Quazis to hold a recognised legal qualification (LLB or equivalent) in addition to religious knowledge.</li>
+      <li>Establish an independent Board of Appeal for Quazi Court decisions, accessible without cost to any party.</li>
+    </ul>
+
+    <h4>Section D — Polygamy</h4>
+    <p>Clause 5: Polygamous marriages contracted after commencement of this Act shall require prior written consent from all existing wives and judicial approval from the Quazi Court. Approval shall only be granted where the court is satisfied that all wives will receive equitable treatment as defined by Ministerial regulations.</p>
+
+    <h3>2.3 Consequential Amendments to Other Statutes</h3>
+    <ul class="clauses">
+      <li>Penal Code: Amend Section 363 to raise the age of statutory rape from 16 to 18, eliminating the gap between MMDA marriage law and criminal sexual offences law.</li>
+      <li>Evidence Ordinance: Clarify that marriages solemnised under a void MMDA provision carry no evidentiary weight in property, succession, or custody proceedings.</li>
+      <li>National Child Protection Authority Act: Expressly empower the NCPA to investigate and intervene in MMDA child marriage situations as it does in other child welfare cases.</li>
+    </ul>
+  </section>
+
+  <!-- Part III -->
+  <section id="part3">
+    <div class="part-header">
+      <p class="part-label">Part III</p>
+      <h2>Children in Buddhist Monasteries — Amendment to the Buddhist Temporalities Ordinance</h2>
+    </div>
+
+    <h3>3.1 The Problem in Detail</h3>
+    <p>There is currently no Sri Lankan law that:</p>
+    <ul class="clauses">
+      <li>Sets a minimum age for Buddhist novice ordination (pabbajja);</li>
+      <li>Requires informed and documented parental consent for a child's ordination;</li>
+      <li>Establishes welfare or safeguarding standards inside monasteries housing children;</li>
+      <li>Creates a registration or monitoring mechanism for child monks;</li>
+      <li>Gives any regulatory authority oversight of child welfare in monastic settings.</li>
+    </ul>
+    <p>According to estimates cited in peer-reviewed research published in the Sri Lanka Journal of Forensic Medicine, Science and Law (2024) and in Child Abuse Review (Wiley, 2025), approximately 60,000 children may be living in over 12,000 monasteries across Sri Lanka — though these figures require independent verification as methodology and definitions vary across sources. Concerns raised in media investigations, NCPA reports, and academic research include physical and sexual abuse, financial exploitation of novice monks' status, denial of secular education, and separation from family — all of which engage Articles 9, 19, 28, 34 and 36 of the CRC.</p>
+
+    <div class="callout callout-note">
+      <p class="callout-label">Constitutional Note</p>
+      <p>Article 9 of the Constitution obliges the State to protect and foster the Buddha Sasana. Nothing in Article 9 prevents Parliament from legislating reasonable child-protection safeguards applicable to religious institutions. Protecting children within religious institutions is entirely compatible with protecting religious institutions themselves. Child abuse within monasteries undermines, not protects, the Buddha Sasana.</p>
+    </div>
+
+    <h3>3.2 Proposed New Part IIA — Child Welfare in Buddhist Monasteries</h3>
+
+    <h4>Section A — Minimum Age for Novice Ordination</h4>
+
+    <div class="statute-block">
+      <p class="statute-title">Proposed Section 43A — Minimum Age for Novice Ordination (Pabbajja)</p>
+      <ol>
+        <li>No child under the age of twelve (12) years shall be ordained as a novice monk (samanera) at any temple registered under this Ordinance.</li>
+        <li>No child between the ages of twelve (12) and eighteen (18) years shall be ordained without: (a) the written, witnessed consent of both parents or lawful guardians; and (b) a declaration by the ordaining Viharadhipati that the child has been informed of, and freely accepts, the obligations of novice monastic life.</li>
+        <li>For the avoidance of doubt, consent obtained through coercion, undue influence, financial inducement, or exploitation of the vulnerability of the child's family shall not constitute valid consent under subsection (2)(a).</li>
+      </ol>
+    </div>
+
+    <div class="callout callout-warn">
+      <p class="callout-label">Rationale for Age 12 Rather Than 18</p>
+      <p>Imposing 18 as an absolute minimum would be constitutionally vulnerable under Article 9 and politically non-viable. The Vinaya Pitaka itself contemplates ordination for children of sufficient maturity. Setting 12 as a hard floor eliminates the most extreme documented abuses — including children as young as 5 — while respecting the tradition in a form that can realistically pass Parliament. A review mechanism at 3 years is built in to progressively raise this floor.</p>
+    </div>
+
+    <h4>Section B — Registration and Welfare Standards</h4>
+    <p>Proposed Section 43B — Registration of Child Monks:</p>
+    <ul class="clauses">
+      <li>Every temple housing a child monk under 18 shall register that child with the Commissioner-General of Buddhist Affairs within 14 days of ordination.</li>
+      <li>Registration shall include: the child's name, date of birth, parental details, consent documentation, and the name of the responsible Viharadhipati.</li>
+      <li>Failure to register within the prescribed period shall constitute an offence punishable by a fine not exceeding Rs. 100,000 and/or revocation of the temple's registered status.</li>
+    </ul>
+
+    <p>Proposed Section 43C — Right to Education:</p>
+    <ul class="clauses">
+      <li>Every child monk under 18 shall have the right to receive secular education to at least GCE Ordinary Level standard, whether through the pirivena system or any other approved institution.</li>
+      <li>No Viharadhipati or temple authority shall obstruct, discourage, or prevent a child monk from receiving such education.</li>
+    </ul>
+
+    <p>Proposed Section 43D — Right to Leave:</p>
+    <ul class="clauses">
+      <li>Any child monk under 18 shall have the right to leave the monastery at any time, and this right shall be communicated to the child and their parents at ordination.</li>
+      <li>No temple authority shall retain a child monk against the wishes of the child or their parents or guardians.</li>
+    </ul>
+
+    <p>Proposed Section 43E — Welfare Inspections:</p>
+    <ul class="clauses">
+      <li>The Department of Probation and Child Care Services shall have the power to conduct unannounced welfare inspections of any temple housing child monks.</li>
+      <li>The National Child Protection Authority shall have the power to investigate complaints of abuse, neglect, or exploitation of child monks and to remove a child from a monastic setting where the child's welfare requires it.</li>
+    </ul>
+  </section>
+
+  <!-- Part IV -->
+  <section id="part4">
+    <div class="part-header">
+      <p class="part-label">Part IV</p>
+      <h2>Overarching Provisions</h2>
+    </div>
+
+    <h3>4.1 Minimum Age of Marriage Act — Universal Application</h3>
+    <p>A standalone Minimum Age of Marriage Act shall be enacted, applying universally to all marriages solemnised or registered in Sri Lanka, regardless of the personal law governing the parties:</p>
+
+    <div class="statute-block">
+      <p class="statute-title">Minimum Age of Marriage Act 2026 — Section 2</p>
+      <ol>
+        <li>No marriage shall be lawfully solemnised, registered, or given legal effect in Sri Lanka where either party has not attained the age of eighteen (18) years.</li>
+        <li>This Act applies to all persons in Sri Lanka regardless of religion, ethnicity, or the personal law otherwise applicable to the parties.</li>
+        <li>In the event of any inconsistency between this Act and any other written law (including but not limited to the Muslim Marriage and Divorce Act No. 13 of 1951), this Act shall prevail.</li>
+      </ol>
+    </div>
+
+    <h3>4.2 Harmonisation of Internal Contradictions</h3>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Contradiction</th>
+          <th>Current Position</th>
+          <th>Proposed Resolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MMDA permits marriage under 16; Penal Code s.363 criminalises sex under 16</td>
+          <td>Marriage under 16 possible; consummation technically criminal</td>
+          <td>MMDA floor raised to 18; Penal Code s.363 amended to 18</td>
+        </tr>
+        <tr>
+          <td>Children's Ordinance defines child as under 18; MMDA permits child marriage</td>
+          <td>Parallel legal regimes with no hierarchy</td>
+          <td>Minimum Age of Marriage Act overrides MMDA; universal 18 standard</td>
+        </tr>
+        <tr>
+          <td>Buddhist Temporalities Ordinance silent on child welfare; NCPA has general mandate</td>
+          <td>No specific authority; NCPA involvement ad hoc</td>
+          <td>Explicit NCPA jurisdiction over monastic child welfare inserted into Ordinance</td>
+        </tr>
+        <tr>
+          <td>Constitution Art. 9 (Buddhism foremost) vs Arts. 12 &amp; 14 (equal protection)</td>
+          <td>Courts have not resolved this tension in child rights context</td>
+          <td>Bill expressly states child rights provisions are consistent with Art. 9 and do not abrogate it</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.3 Enforcement and Penalties</h3>
+    <h4>Child Marriage</h4>
+    <ul class="clauses">
+      <li>Any person who solemnises, facilitates, or registers a marriage in contravention of the Minimum Age of Marriage Act 2026 shall be liable on conviction to imprisonment not exceeding 5 years and/or a fine not exceeding Rs. 500,000.</li>
+      <li>Parental or guardian consent to an underage marriage shall not be a defence. Consenting parents or guardians commit a separate offence.</li>
+      <li>The NCPA shall be empowered to conduct suo motu investigations into suspected child marriages and to seek injunctions from the Magistrate's Court.</li>
+    </ul>
+
+    <h4>Child Ordination</h4>
+    <ul class="clauses">
+      <li>Any Viharadhipati who ordains a child under 12, or ordains a child between 12–18 without proper consent documentation, commits an offence punishable by a fine not exceeding Rs. 200,000 and/or suspension of the temple's registration for up to 2 years.</li>
+      <li>Any person who withholds, forges, or coerces consent documentation for child ordination commits a criminal offence.</li>
+    </ul>
+  </section>
+
+  <!-- Part V -->
+  <section id="part5">
+    <div class="part-header">
+      <p class="part-label">Part V</p>
+      <h2>Implementation Roadmap</h2>
+    </div>
+
+    <h3>5.1 Phased Commencement</h3>
+
+    <div class="phase-grid" role="table" aria-label="Implementation phases">
+      <div class="phase-row header">
+        <span>Phase</span>
+        <span>Timeframe</span>
+        <span>Action</span>
+      </div>
+      <div class="phase-row">
+        <div class="phase-cell phase-name">1 — Legislative Passage</div>
+        <div class="phase-cell phase-time">0–6 months</div>
+        <div class="phase-cell">Pass MMDA Amendment Bill and Minimum Age of Marriage Act 2026; amend Buddhist Temporalities Ordinance.</div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-cell phase-name">2 — Regulatory Framework</div>
+        <div class="phase-cell phase-time">6–12 months</div>
+        <div class="phase-cell">Ministry of Justice to issue Quazi qualifications regulations; Commissioner-General of Buddhist Affairs to issue child monk registration regulations.</div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-cell phase-name">3 — Institutional Capacity</div>
+        <div class="phase-cell phase-time">6–18 months</div>
+        <div class="phase-cell">NCPA to establish specialist units for MMDA child marriage and monastic welfare cases; train Quazis and police.</div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-cell phase-name">4 — Community Engagement</div>
+        <div class="phase-cell phase-time">Ongoing from month 1</div>
+        <div class="phase-cell">Government-funded awareness campaigns in Muslim and Buddhist communities; engage religious leaders in reform messaging.</div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-cell phase-name">5 — Review</div>
+        <div class="phase-cell phase-time">24 months post-commencement</div>
+        <div class="phase-cell">Parliamentary Select Committee review; NCPA to report enforcement statistics; review minimum ordination age with a view to progressive increase.</div>
+      </div>
+    </div>
+
+    <h3>5.2 Addressing Political Resistance</h3>
+    <p>The primary obstacle to both reforms has been political deference to religious conservative blocs, not any constitutional or jurisprudential barrier. This Bill minimises that resistance by:</p>
+    <ul class="clauses">
+      <li>Grounding every provision in Sri Lanka's own existing law — the Children's Ordinance, the Constitution, the Penal Code — rather than presenting reforms as externally imposed.</li>
+      <li>Drawing on the 2020 Advisory Committee report — which included ACJU representation — to demonstrate intra-community scholarly support.</li>
+      <li>Referencing Malaysia and Indonesia as Muslim-majority jurisdictions where reform of Islamic family law has been undertaken — demonstrating that such reform is achievable within a Muslim legal framework, even where those models are imperfect and retain some exceptions.</li>
+      <li>Framing the Buddhist ordination provisions as fulfilling Sri Lanka's Article 9 duty to protect the Buddha Sasana — which is undermined, not protected, by child abuse within monasteries.</li>
+      <li>Setting the minimum ordination age at 12 (not 18) to make the Buddhist provisions politically passable in the first instance, with a legislated review pathway.</li>
+    </ul>
+  </section>
+
+  <!-- Conclusion -->
+  <section id="conclusion">
+    <div class="part-header">
+      <p class="part-label">Conclusion</p>
+      <h2>The Case for Acting Now</h2>
+    </div>
+
+    <p>Sri Lanka in 2026 is at a legislative inflection point. The January 2024 amendment to the Children's Ordinance demonstrated that child rights reform is achievable. The MMDA reform process has unprecedented intra-community support — including from within the ACJU — and a Private Member Bill has already been tabled in Parliament.</p>
+
+    <p>The reforms proposed here are not radical. They do not abolish Islamic personal law. They do not ban Buddhist ordination. They do not impose a secular uniformity that erases community identity. They do one thing only: they ensure that every child in Sri Lanka — regardless of the religion they were born into — has the same protection from exploitation, the same right to education, the same right to leave, and the same right to grow up before being bound by adult decisions made for them.</p>
+
+    <div class="callout callout-note">
+      <p class="callout-label">The Core Argument</p>
+      <p>Sri Lanka ratified the CRC in 1991. That commitment is three and a half decades old. The children affected by these gaps cannot wait another thirty-five years. The moment to act is now.</p>
+    </div>
+  </section>
+
+  <div class="colophon">
+    <p>Child Rights Harmonisation Bill 2026 — Legislative Reform Proposal</p>
+    <p>Prepared with reference to CRC, CEDAW, ICCPR, MPLRAG submissions (2026), UNICEF Sri Lanka reports, and comparative law from Malaysia and Indonesia</p>
+  </div>
+
+</div>
+</body>
+</html>
